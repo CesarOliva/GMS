@@ -1,0 +1,121 @@
+* {
+  font-family: "Poppins";
+}
+
+@font-face {
+  font-family: "Valentien";
+  src: url("valentien.ttf")
+}
+
+li.active a {
+  border-bottom: 2px solid #a14a4c;
+}
+
+.mobile-menu {
+  transition: all 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.mobile-menu.open {
+  max-height: 300px;
+}
+
+.hamburger span {
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+section.main {
+  background: linear-gradient(135deg, rgba(36, 34, 35, 0.9) 0%, rgba(59, 58, 58, 0.7) 100%), url('https://images.unsplash.com/photo-1622534376374-fe4480328daa?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+section.main h1,
+section.hero h2{
+  font-family: 'Valentien';
+  letter-spacing: 2px;
+}
+
+section.productos{
+  background-image: url('Imagenes/background.png');
+}
+
+.valores{
+  height: -webkit-fill-available;
+}
+
+.wpp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.contact-bg {
+  background: linear-gradient(135deg, rgba(36, 34, 35, 0.9) 0%, rgba(59, 58, 58, 0.7) 100%), url('https://images.unsplash.com/photo-1619759247142-b457e9e6b634?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+}
+
+#popup {
+  box-shadow: -4px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 639px) { 
+    section.main {
+        background-position:initial;
+    }
+}
+
+.categoria {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.categoria-header {
+  gap: 20px;
+}
+
+.categoria-header img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.categoria-info h2 {
+  color: #0077b6;
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.categoria-info p {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.lista-productos {
+  margin-top: 15px;
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 6px;
+}
+
+.lista-productos li {
+  list-style: disc;
+  color: #222;
+}
