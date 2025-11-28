@@ -51,10 +51,6 @@ section.hero h2{
   letter-spacing: 2px;
 }
 
-section.productos{
-  background-image: url('Imagenes/background.png');
-}
-
 .valores{
   height: -webkit-fill-available;
 }
